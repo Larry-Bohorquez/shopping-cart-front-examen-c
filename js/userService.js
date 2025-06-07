@@ -169,29 +169,29 @@ function addUser() {
     <div class="col">
     <input type="email" id="email" class="form-control" placeholder="Correo" aria-label="First name" required>
     </div>
-                            <div class="col">
-                            <input type="url" id="avatar" class="form-control" placeholder="Link del avatar" aria-label="Last name" required>
-                            </div>
-                            </div>
-                            
-                            <div class="row mt-3 ">
-                            <div class="col text-center">
-                            <button type="button" class="btn btn-success" onclick="saveUser()">
-                            <i class="fa-solid fa-floppy-disk"></i> Guardar
-                            </button>
-                            </div>
-                            </div> 
-                            </form>
-                            </div>
-                            </div>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            `
+    <div class="col">
+    <input type="url" id="avatar" class="form-control" placeholder="Link del avatar" aria-label="Last name" required>
+    </div>
+    </div>
+                           
+    <div class="row mt-3 ">
+    <div class="col text-center">
+    <button type="button" class="btn btn-success" onclick="saveUser()">
+    <i class="fa-solid fa-floppy-disk"></i> Guardar
+    </button>
+    </div>
+    </div> 
+    </form>
+    </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    `
     document.getElementById('showModal').innerHTML = modalUser
     const modal = new bootstrap.Modal(document.getElementById('showModalUser'))
     modal.show()
